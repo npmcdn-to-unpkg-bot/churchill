@@ -4,9 +4,13 @@
 <style>
   @charset "UTF-8";
   @font-face{font-family:'FaktPro';font-style:normal;font-weight:400;src:url(https://dl.dropboxusercontent.com/u/32029178/FontCSS/FaktPro-Blond.woff2) format('woff2'),url(https://dl.dropboxusercontent.com/u/32029178/FontCSS/FaktPro-Blond_gdi.woff) format('woff')}@font-face{font-family:'FaktPro';font-style:normal;font-weight:700;src:url(https://dl.dropboxusercontent.com/u/32029178/FontCSS/FaktPro-SemiBold.woff2) format('woff2'),url(https://dl.dropboxusercontent.com/u/32029178/FontCSS/FaktPro-SemiBold_gdi.woff) format('woff')}:root,html{font-family:'FaktPro'}
-  :root,html{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;font:100%/1.67 'FaktPro',caption;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility;-webkit-font-smoothing:subpixel-antialiased;-moz-osx-font-smoothing:grayscale;overflow-y:scroll;overflow-x:hidden;-ms-overflow-style:-ms-autohiding-scrollbar;width:100%;min-height:100%;*zoom:1;background:hsl(0,0%,100%);color:hsl(240,60%,6.9%)}*,::before,::after{box-sizing:inherit;margin:0;padding:0;border:0;box-shadow:none;outline:0 none;-webkit-tap-highlight-color:transparent;text-decoration:inherit}article,div,header,section,fieldset,footer,form{display:block}a{color:inherit;cursor:pointer;text-decoration:none;width:100%}textarea{resize:vertical}input{-webkit-border-radius:0}nav ul,nav ol{list-style:none;list-style-image:none}body,a,h1,h2,h3,h4,h5,span,p,blockquote{font:400 1rem/1.3rem 'FaktPro'}
+  :root,html{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font:100%/1.67 'FaktPro',caption 400;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-webkit-font-smoothing:subpixel-antialiased;-moz-osx-font-smoothing:grayscale;overflow-y:scroll;overflow-x:hidden;-ms-overflow-style:-ms-autohiding-scrollbar;width:100%;min-height:100%;*zoom:1;}
+  *,::before,::after{box-sizing:inherit;margin:0;padding:0;border:0;box-shadow:none;outline:0 none;-webkit-tap-highlight-color:transparent;text-decoration:inherit}
+  main{display:block}
+  a{color:inherit;cursor:pointer;text-decoration:none;width:100%}
+  textarea{resize:vertical}input{-webkit-border-radius:0}
+  nav ul,nav ol{list-style:none;list-style-image:none}
 </style>
-
 <style>
   .body{
     min-height:100vh;
@@ -16,15 +20,7 @@
     background-image:-o-linear-gradient(#f5f5f5,#f5f5f5 250px,#fefefe);
     background-image:-ms-linear-gradient(#f5f5f5,#f5f5f5 250px,#fefefe);
     background-image:linear-gradient(#f5f5f5,#f5f5f5 250px,#fefefe);
-    text-rendering:optimizeLegibility;
-    -webkit-font-smoothing:antialiased;
-    -webkit-font-smoothing:subpixel-antialiased;
-    -moz-osx-font-smoothing:grayscale;
   }
-  *{text-rendering:optimizeLegibility;
-    -webkit-font-smoothing:antialiased;
-    -webkit-font-smoothing:subpixel-antialiased;
-    -moz-osx-font-smoothing:grayscale;}
   .site-header{background:hsl(301,48%,26%);box-shadow: 0 2px 3px 0 rgba(0,0,0,0.37)}
   .nav-1st h1,.nav-1st h2{font-size:21px;font-weight:700;}
   .nav-1st{}
