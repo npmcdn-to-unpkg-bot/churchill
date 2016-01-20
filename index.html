@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<style>
+  @charset "UTF-8";
+  @font-face{font-family:'FaktPro';font-style:normal;font-weight:400;src:url(https://dl.dropboxusercontent.com/u/32029178/FontCSS/FaktPro-Blond.woff2) format('woff2'),url(https://dl.dropboxusercontent.com/u/32029178/FontCSS/FaktPro-Blond_gdi.woff) format('woff')}@font-face{font-family:'FaktPro';font-style:normal;font-weight:700;src:url(https://dl.dropboxusercontent.com/u/32029178/FontCSS/FaktPro-SemiBold.woff2) format('woff2'),url(https://dl.dropboxusercontent.com/u/32029178/FontCSS/FaktPro-SemiBold_gdi.woff) format('woff')}:root,html{font-family:'FaktPro'}
+  :root,html{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;font:100%/1.67 'FaktPro',caption;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility;-webkit-font-smoothing:subpixel-antialiased;-moz-osx-font-smoothing:grayscale;overflow-y:scroll;overflow-x:hidden;-ms-overflow-style:-ms-autohiding-scrollbar;width:100%;min-height:100%;*zoom:1;background:hsl(0,0%,100%);color:hsl(240,60%,6.9%)}*,::before,::after{box-sizing:inherit;margin:0;padding:0;border:0;box-shadow:none;outline:0 none;-webkit-tap-highlight-color:transparent;text-decoration:inherit}article,div,header,section,fieldset,footer,form{display:block}a{color:inherit;cursor:pointer;text-decoration:none;width:100%}textarea{resize:vertical}input{-webkit-border-radius:0}nav ul,nav ol{list-style:none;list-style-image:none}body,a,h1,h2,h3,h4,h5,span,p,blockquote{font:400 1rem/1.3rem 'FaktPro'}
+</style>
+
+<style>
+  .body{
+    background-image:-webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#f5f5f5),color-stop(250px,whiteSmoke),color-stop(100%,#fefefe));
+    background-image:-webkit-linear-gradient(#f5f5f5,#f5f5f5 250px,#fefefe);
+    background-image:-moz-linear-gradient(#f5f5f5,#f5f5f5 250px,#fefefe);
+    background-image:-o-linear-gradient(#f5f5f5,#f5f5f5 250px,#fefefe);
+    background-image:-ms-linear-gradient(#f5f5f5,#f5f5f5 250px,#fefefe);
+    background-image:linear-gradient(#f5f5f5,#f5f5f5 250px,#fefefe);
+  }
+  
+  .site-header{position:fixed:top:0;left:0;right:0;background:hsl(301,48%,26%);box-shadow: 0 2px 3px 0 rgba(0,0,0,0.37)}
+  .nav-1st h1,.nav-1st h2{font-size:21px;font-weight:700;}
+  .nav-1st{}
+  .nav-1st,.nav-1st > div,aside{display:block;position:relative;}
+  .nav-1st>div{float:left;}
+  .nav-1st::before,.nav-1st::after{display:table;content:'';}
+  .nav-1st::after{clear:both;}
+  .nav-1st + aside{position:absolute;right:0;top:0;}
+  .nav-1st > div > .nav-link-1st{display:block;float:left;padding:32px;background:hsl(301,48%,26%);color:#fff}
+  .nav-1st > div > .nav-link-1st + .nav-list-2nd{background:#922790;position:absolute;z-index:100;top:-900em;left:0;right:0;opacity:0;transition:opacity 0.28s cubic-bezier(0.4,0,0.2,1);}
+  .nav-1st > div:hover > .nav-link-1st + .nav-list-2nd,.nav-1st>div>.nav-link-1st+.nav-list-2nd:hover{top:84px;opacity:1;box-shadow: 0 3px 3px 0 rgba(0,0,0,0.37);}
+  .nav-1st > div:hover > .nav-link-1st,.nav-1st > div > .nav-link-1st+.nav-list-2nd:hover{background:#922790;color:#fff;transition:background 0.28s cubic-bezier(0.4,0,0.2,1);box-shadow: 0 3px 3px 0 rgba(0,0,0,0.37)}
+  .nav-1st .nav-item-2nd{width:100%;}
+  .nav-1st .nav-item-2nd .nav-link-2nd{display:block;padding:1px 32px;color:#fff;font-size:smaller;}
+  .nav-1st .nav-item-2nd:last-child .nav-link-2nd{margin-bottom:18px}
+  .nav-1st .nav-item-2nd:hover{background:rgba(255,255,255,.4);}
+  .wrapper{max-width:1120px;margin:0 auto;background:#fff;-webkit-box-shadow: rgba(0,0,0,.1) 0 6px 6px 0;
+    -moz-box-shadow: rgba(0,0,0,.1) 0 6px 6px 0;
+    box-shadow: rgba(0,0,0,.1) 0 6px 6px 0;}
+  </style>
+<link rel="stylesheet" href="https://npmcdn.com/flickity@1.1/dist/flickity.min.css">
+</head>
+
+<body class="body">
+  
+  <div class="wrapper">
+<header class="site-header">
+<nav class="nav-1st">
+<div><a class="nav-link-1st" href="#0" style="padding-bottom:53px"><h1>Churchill</h1></a></div>
+<div>
+<a class="nav-link-1st" href="#0">
+  <h2>Brands</h2>
+  <p><small>View products by brand</small></p>
+</a>
+<ul class="nav-list-2nd">
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">The Caravan Trail</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Colour Canvas</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Hidden World</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Little Rhymes</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Sieni</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Queens</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Blue Story</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Queens Classic</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Queens Couture</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Alex Clark</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Belle and Boo</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Collier Campbell</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Harlequin</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">The Good Life</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">James Sadler</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Jamie Oliver</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Julie Dodsworth</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">RHS</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Churchill</a></li>
+
+</ul></div>
+<div><a class="nav-link-1st" href="#0">
+  <h2>Products</h2>
+  <p><small>View products by category</small></p>
+</a>
+<ul class="nav-list-2nd">
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Dinnerware</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Giftware</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Houseware</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Mugs</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Teapots</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Melamine</a></li>
+<li class="nav-item-2nd"><a class="nav-link-2nd" href="#0">Picnicware</a></li>
+</ul></div>
+</nav>
+
+<nav class="nav-2nd">
+  <ul><li></li></ul>
+</nav>
+</header>
+
+
+  <main>
+    
+    <div class="carousel-1st">
+      <figure>
+        <figcaption></figcaption>
+      </figure>
+      <figure>
+        <figcaption></figcaption>
+      </figure>
+      <figure>
+        <figcaption></figcaption>
+      </figure>
+      <figure>
+        <figcaption></figcaption>
+      </figure>
+    </div>
+    <div class="carousel-2nd">
+      <figure>
+        <figcaption></figcaption>
+      </figure>
+      <figure>
+        <figcaption></figcaption>
+      </figure>
+      <figure>
+        <figcaption></figcaption>
+      </figure>
+      <figure>
+        <figcaption></figcaption>
+      </figure>
+      <figure>
+        <figcaption></figcaption>
+      </figure>
+    </div>
+
+  </main>
+
+
+  <footer>
+    
+  </footer>
+
+
+</div>
+<script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.min.js"></script>
+<script>
+  var elem = document.querySelector('.carousel-1st');
+  var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'left',
+  contain: true
+  });
+
+  // element argument can be a selector string
+  //   for an individual element
+  var flkty = new Flickity( '.carousel-2nd', {
+  // options
+  });
+</script>
+</body>
+</html>
