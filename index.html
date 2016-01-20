@@ -167,6 +167,8 @@
   var elem = document.querySelector('.carousel-1st');
   var flkty = new Flickity( elem, {
   // options
+  autoPlay: true,
+  wrapAround: true,
   cellAlign: 'left',
   contain: true
   });
@@ -174,7 +176,9 @@
   // element argument can be a selector string
   //   for an individual element
   var flkty = new Flickity( '.carousel-2nd', {
-  // options
+  wrapAround: true,
+  autoPlay: true,
+  contain: true
   });
 </script>
 </body>
