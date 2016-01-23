@@ -7,7 +7,7 @@
      Stripe.setPublishableKey('YOUR_PUBLISHABLE_KEY');
 
     var stripeResponseHandler = function(status, response) {
-      var paymentForm = document.forms.paymentForm;
+      var paymentForm = document.forms['paymentForm'];
 
       if (response.error) {
         paymentForm.querySelector('.payment-error').textContent=response.error.message;
@@ -24,7 +24,7 @@
     };
   
   !function() {
-    var paymentForm = document.forms.paymentForm;
+    var paymentForm = document.forms['paymentForm'];
     paymentForm.submit(function(e){
       var thisForm = this;
       thisForm.querySelector('button').setAttribute('disabled', true);
