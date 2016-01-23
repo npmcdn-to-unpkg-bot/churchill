@@ -3,36 +3,7 @@
 <head>
    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 
-  <script type="text/javascript">
-     Stripe.setPublishableKey('YOUR_PUBLISHABLE_KEY');
-
-    var stripeResponseHandler = function(status, response) {
-      var paymentForm = document.forms['paymentForm'];
-
-      if (response.error) {
-        paymentForm.querySelector('.payment-error').textContent=response.error.message;
-        paymentForm.querySelector('.btn-submit').removeAttribute('disabled');
-      } else {
-        var stripeToken = response.id;
-        var stripeTokenField = document.createElement('input');
-        stripeTokenField.type="hidden";
-        stripeTokenField.name="stripeToken";
-        stripeTokenField.value=stripeToken;
-        paymentForm.appendChild(stripeTokenField);
-        paymentForm.submit();
-      }
-    };
   
-  !function() {
-    var paymentForm = document.forms['paymentForm'];
-    paymentForm.addEventListener('submit',function(e){
-      var thisForm = this;
-      thisForm.querySelector('button').setAttribute('disabled', true);
-      Stripe.card.createToken(thisForm, stripeResponseHandler);
-      return false;
-    });
-  }();
-  </script>
 <style>
   @charset "UTF-8";
   @font-face{font-family:'FaktPro';font-style:normal;font-weight:400;src:url(https://dl.dropboxusercontent.com/u/32029178/FontCSS/FaktPro-Blond.woff2) format('woff2'),url(https://dl.dropboxusercontent.com/u/32029178/FontCSS/FaktPro-Blond_gdi.woff) format('woff')}@font-face{font-family:'FaktPro';font-style:normal;font-weight:700;src:url(https://dl.dropboxusercontent.com/u/32029178/FontCSS/FaktPro-SemiBold.woff2) format('woff2'),url(https://dl.dropboxusercontent.com/u/32029178/FontCSS/FaktPro-SemiBold_gdi.woff) format('woff')}:root,html{font-family:'FaktPro'}
@@ -221,6 +192,36 @@
 
 
 </div>
+<script type="text/javascript">
+     Stripe.setPublishableKey('YOUR_PUBLISHABLE_KEY');
+
+    var stripeResponseHandler = function(status, response) {
+      var paymentForm = document.forms['paymentForm'];
+
+      if (response.error) {
+        paymentForm.querySelector('.payment-error').textContent=response.error.message;
+        paymentForm.querySelector('.btn-submit').removeAttribute('disabled');
+      } else {
+        var stripeToken = response.id;
+        var stripeTokenField = document.createElement('input');
+        stripeTokenField.type="hidden";
+        stripeTokenField.name="stripeToken";
+        stripeTokenField.value=stripeToken;
+        paymentForm.appendChild(stripeTokenField);
+        paymentForm.submit();
+      }
+    };
+  
+  !function() {
+    var paymentForm = document.forms['paymentForm'];
+    paymentForm.addEventListener('submit',function(e){
+      var thisForm = this;
+      thisForm.querySelector('button').setAttribute('disabled', true);
+      Stripe.card.createToken(thisForm, stripeResponseHandler);
+      return false;
+    });
+  }();
+  </script>
 <script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.min.js"></script>
 <script>
   var elem = document.querySelector('.carousel-1st');
