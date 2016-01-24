@@ -71,10 +71,11 @@
     -moz-box-shadow: rgba(0,0,0,.1) 0 6px 6px 0;
     box-shadow: rgba(0,0,0,.1) 0 6px 6px 0;}
     
-    .search{position:relative;background-position:50%;background-size:cover;background-repeat:no-repeat;min-height:400px;width:100%;}
+    .search{position:relative;background-position:50%;background-size:cover;background-repeat:no-repeat;min-height:400px;width:50%;}
     .search.churchill-1{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/DSC_0101.jpg);}
     .search::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(13,8,90,.1);z-index:800;}
-    .search.churchill-2{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/DSC_0030.jpg);}
+    .left{width:50%;}
+    .left.churchill-2{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/DSC_0030.jpg);}
     .search.churchill-3{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/churchill-016789.jpg);}
     .search-caption{text-shadow:0 2px 10px rgba(0,0,0,.4);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:900;text-align:center;color:white;padding:24px}
     .search input{width:100%;padding:8px;border:2px solid white;border-radius:4px;box-shadow: 0 2px 10px rgba(0,0,0,.4);will-change:transform,box-shadow;transition:box-shadow .2s cubic-bezier(.4,1,.2,1),transform .2s cubic-bezier(.4,1,.2,1);}
@@ -163,16 +164,25 @@
 
 
   <main>
-    
-    <div class="search">
-      <figure class="search churchill-1">
-        <figcaption class="search-caption">
-          <h3>Find a product:</h3>
-          <p><input type="search"></p>
-        </figcaption>
-      </figure>
-    </div>
-    
+    <section class="above-the-fold">
+      <div class="left churchill-2">
+        <h1>Welcome to Churchill China's Business to Business website</h1>
+        <p>
+        Remember a carriage paid order is just £99 for Mainland UK customers and despatch is only 2-3 days.
+        The Spring/Summer 2015 catalogue is now available to Download from the website. 
+        Please note you must be registered to view this information. 
+        Churchill are very excited to be introducing over 120 new products from brands such as Jamie Oliver, Alex Clark and Queens.
+        </p>
+      </div>
+      <div class="search">
+        <figure class="search churchill-1">
+          <figcaption class="search-caption">
+            <h3>Find a product:</h3>
+            <p><input type="search"></p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
     <div class="carousel">
       <figure class="carousel-item product-1">
         <figcaption class="carousel-caption"></figcaption>
@@ -190,16 +200,6 @@
         <figcaption class="carousel-caption"></figcaption>
       </figure>
     </div>
-    
-    <section>
-      <h1>Welcome to Churchill China's Business to Business website</h1>
-      <p>
-      Remember a carriage paid order is just £99 for Mainland UK customers and despatch is only 2-3 days.
-      The Spring/Summer 2015 catalogue is now available to Download from the website. 
-      Please note you must be registered to view this information. 
-      Churchill are very excited to be introducing over 120 new products from brands such as Jamie Oliver, Alex Clark and Queens.
-      </p>
-    </section>
     
   </main>
 
