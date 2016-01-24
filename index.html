@@ -71,10 +71,13 @@
     -moz-box-shadow: rgba(0,0,0,.1) 0 6px 6px 0;
     box-shadow: rgba(0,0,0,.1) 0 6px 6px 0;}
     
-    .search{position:relative;background-position:50%;background-size:cover;background-repeat:no-repeat;min-height:400px;width:50%;}
+    .above-the-fold{position:relative;}
+    .above-the-fold::before,.above-thefold::after{display:table;content:'';}
+    .above-the-fold::after{clear:both;}
+    .search{position:relative;float:left;background-position:50%;background-size:cover;background-repeat:no-repeat;min-height:400px;width:50%;}
     .search.churchill-1{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/DSC_0101.jpg);}
     .search::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(13,8,90,.1);z-index:800;}
-    .left{width:50%;}
+    .left{width:50%;float:left;}
     .left.churchill-2{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/DSC_0030.jpg);}
     .search.churchill-3{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/churchill-016789.jpg);}
     .search-caption{text-shadow:0 2px 10px rgba(0,0,0,.4);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:900;text-align:center;color:white;padding:24px}
