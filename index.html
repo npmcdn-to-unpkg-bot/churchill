@@ -56,8 +56,8 @@
   .nav-1st{}
   .nav-1st,.nav-1st > div,aside{display:block;position:relative;}
   .nav-1st>div{float:left;}
-  .nav-1st::before,.nav-1st::after{display:table;content:'';}
-  .nav-1st::after{clear:both;}
+  .nav-1st::before,.nav-1st::after,.nav-2nd::before,.nav-2nd::after{display:table;content:'';}
+  .nav-1st::after,.nav-2nd::after{clear:both;}
   .nav-1st + aside{position:absolute;right:0;top:0;}
   .nav-1st > div > .nav-link-1st{display:block;float:left;padding:32px;background-color:#0D085A;color:#fff}
   .nav-1st > div > .nav-link-1st + .nav-list-2nd{background-color:#352F75;position:absolute;z-index:1000;top:-900em;left:0;right:0;opacity:0;transition:opacity 0.28s cubic-bezier(0.4,0,0.2,1);}
@@ -67,6 +67,7 @@
   .nav-1st .nav-item-2nd .nav-link-2nd{display:block;padding:1px 32px;color:#fff;font-size:smaller;}
   .nav-1st .nav-item-2nd:last-child .nav-link-2nd{margin-bottom:18px}
   .nav-1st .nav-item-2nd:hover{background:#7E7BC1;}
+  .nav-2nd ul li{float:left}
   
   .wrapper{max-width:1120px;width:100%;min-height:100vh;margin:0 auto;background-color:#fff;-webkit-box-shadow: rgba(0,0,0,.1) 0 6px 6px 0;
     -moz-box-shadow: rgba(0,0,0,.1) 0 6px 6px 0;
