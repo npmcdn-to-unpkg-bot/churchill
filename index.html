@@ -75,9 +75,9 @@
     -moz-box-shadow: rgba(0,0,0,.1) 0 6px 6px 0;
     box-shadow: rgba(0,0,0,.1) 0 6px 6px 0;}
     
-    .above-the-fold{position:relative;}
-    .above-the-fold::before,.above-the-fold::after{display:table;content:'';}
-    .above-the-fold::after{clear:both;}
+    section{position:relative;}
+    section::before,section::after{display:table;content:'';}
+    section::after{clear:both;}
     .search,.leader{position:relative;background-position:50%;background-size:cover;background-repeat:no-repeat;min-height:400px;width:100%;}
     .search.churchill-1{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/DSC_0101.jpg);}
     .search::after,.leader::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(13,8,90,.1);z-index:800;}
@@ -190,7 +190,7 @@
       </div>
     </div>
     </section>
-    <div class="carousel">
+    <section class="carousel">
       <figure class="carousel-item product-1">
         <figcaption class="carousel-caption"></figcaption>
       </figure>
@@ -206,7 +206,28 @@
       <figure class="carousel-item product-5">
         <figcaption class="carousel-caption"></figcaption>
       </figure>
-    </div>
+    </section>
+    
+    <section>
+      <div class="left">
+        <figure>
+          <figcaption>
+            <h3>Shop Brands</h3>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="right">
+        <figure>
+          <figcaption>
+            <h3>Shop Categories</h3>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    
+    <section>
+      
+    </section>
     
   </main>
 
