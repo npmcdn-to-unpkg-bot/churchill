@@ -74,19 +74,21 @@
     -moz-box-shadow: rgba(0,0,0,.1) 0 6px 6px 0;
     box-shadow: rgba(0,0,0,.1) 0 6px 6px 0;}
     
-    .carousel-item-1st{position:relative;background-position:50%;background-size:cover;background-repeat:no-repeat;min-height:400px;padding:2% 0;width:100%;}
-    .carousel-item-1st.churchill-1{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/DSC_0101.jpg);}
-    .carousel-item-1st.churchill-2{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/DSC_0030.jpg);}
-    .carousel-item-1st.churchill-3{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/churchill-016789.jpg);}
-    .carousel-caption-1st{position:absolute;top:50%;left:50%;will-change:transform;transform:translate3d(-50%,-50%,0);z-index:900;text-align:center;background:purple;color:white;padding:24px}
-    .carousel-item-2nd{position:relative;min-height:200px;background-position:50%;background-size:cover;background-repeat:no-repeat;width:20%;}
-    .carousel-item-2nd.product-1{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/1.jpg)}
-    .carousel-item-2nd.product-2{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/2.jpg)}
-    .carousel-item-2nd.product-3{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/3.jpg)}
-    .carousel-item-2nd.product-4{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/4.jpg)}
-    .carousel-item-2nd.product-5{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/5.jpg)}
-    .carousel-item-2nd.product-6{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/ACWL00061_medium.jpg);}
-    .carousel-caption-2nd{}
+    .search{position:relative;background-position:50%;background-size:cover;background-repeat:no-repeat;min-height:400px;padding:2% 0;width:100%;}
+    .search.churchill-1{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/DSC_0101.jpg);}
+    .search.churchill-2{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/DSC_0030.jpg);}
+    .search.churchill-3{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/churchill-016789.jpg);}
+    .search-caption{position:absolute;top:50%;left:50%;will-change:transform;transform:translate3d(-50%,-50%,0);z-index:900;text-align:center;background:purple;color:white;padding:24px}
+    
+    
+    .carousel-item{position:relative;min-height:200px;background-position:50%;background-size:cover;background-repeat:no-repeat;width:20%;}
+    .carousel-item.product-1{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/1.jpg)}
+    .carousel-item.product-2{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/2.jpg)}
+    .carousel-item.product-3{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/3.jpg)}
+    .carousel-item.product-4{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/4.jpg)}
+    .carousel-item.product-5{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/5.jpg)}
+    .carousel-item.product-6{background-image:url(https://dl.dropboxusercontent.com/u/32029178/churchill/ACWL00061_medium.jpg);}
+    .carousel-caption{}
     figcaption h3{font-size:2rem;line-height:1.1;font-weight:700;}
     figcaption p{font-size:1.3rem;line-height:1;letter-spacing:-1px}
   </style>
@@ -149,40 +151,30 @@
 
   <main>
     
-    <div class="carousel-1st">
-      <figure class="carousel-item-1st churchill-1">
-        <figcaption class="carousel-caption-1st">
-          <h3>Welcome to ChurchillChina.biz</h3><p>Business to Business</p>
-        </figcaption>
-      </figure>
-      <figure class="carousel-item-1st churchill-2">
-        <figcaption class="carousel-caption-1st">
-          <h3>Carriage-paid order and 2-3 day delivery: just £99</h3>
-          <p>for Mainland UK customers</p>
-        </figcaption>
-      </figure>
-      <figure class="carousel-item-1st churchill-3">
-        <figcaption class="carousel-caption-1st">
-          <h3>Over 100 new products</h3><p>from brands such as Jamie Oliver, Alex Clark and Queens.</p>
+    <div class="search">
+      <figure class="search churchill-1">
+        <figcaption class="search-caption">
+          <h3>Search for a Product</h3>
+          <p><input type="search"></p>
         </figcaption>
       </figure>
     </div>
     
-    <div class="carousel-2nd">
-      <figure class="carousel-item-2nd product-1">
-        <figcaption class="carousel-caption-2nd"></figcaption>
+    <div class="carousel">
+      <figure class="carousel-item product-1">
+        <figcaption class="carousel-caption"></figcaption>
       </figure>
-      <figure class="carousel-item-2nd product-2">
-        <figcaption class="carousel-caption-2nd"></figcaption>
+      <figure class="carousel-item product-2">
+        <figcaption class="carousel-caption"></figcaption>
       </figure>
-      <figure class="carousel-item-2nd product-3">
-        <figcaption class="carousel-caption-2nd"></figcaption>
+      <figure class="carousel-item product-3">
+        <figcaption class="carousel-caption"></figcaption>
       </figure>
-      <figure class="carousel-item-2nd product-4">
-        <figcaption class="carousel-caption-2nd"></figcaption>
+      <figure class="carousel-item product-4">
+        <figcaption class="carousel-caption"></figcaption>
       </figure>
-      <figure class="carousel-item-2nd product-5">
-        <figcaption class="carousel-caption-2nd"></figcaption>
+      <figure class="carousel-item product-5">
+        <figcaption class="carousel-caption"></figcaption>
       </figure>
     </div>
 
@@ -190,83 +182,10 @@
 
 
   <footer>
-     <form action="" method="POST" id="paymentForm">
-    <span class="payment-errors"></span>
-
-    <div class="form-row">
-      <label>
-        <span>Card Number</span>
-        <input type="text" size="20" data-stripe="number"/>
-      </label>
-    </div>
-
-    <div class="form-row">
-      <label>
-        <span>CVC</span>
-        <input type="text" size="4" data-stripe="cvc"/>
-      </label>
-    </div>
-
-    <div class="form-row">
-      <label>
-        <span>Expiration (MM/YYYY)</span>
-        <input type="text" size="2" data-stripe="exp-month"/>
-      </label>
-      <span> / </span>
-      <input type="text" size="4" data-stripe="exp-year"/>
-    </div>
-
-    <button type="submit">Submit Payment</button>
-  </form>
   </footer>
-
-
-</div>
-<script type="text/javascript">
-     Stripe.setPublishableKey('YOUR_PUBLISHABLE_KEY');
-
-    var stripeResponseHandler = function(status, response) {
-      var paymentForm = document.forms['paymentForm'];
-
-      if (response.error) {
-        paymentForm.querySelector('.payment-error').textContent=response.error.message;
-        paymentForm.querySelector('.btn-submit').removeAttribute('disabled');
-      } else {
-        var stripeToken = response.id;
-        var stripeTokenField = document.createElement('input');
-        stripeTokenField.type="hidden";
-        stripeTokenField.name="stripeToken";
-        stripeTokenField.value=stripeToken;
-        paymentForm.appendChild(stripeTokenField);
-        paymentForm.submit();
-      }
-    };
-  
-  !function() {
-    var paymentForm = document.forms['paymentForm'];
-    paymentForm.addEventListener('submit',function(e){
-      var thisForm = this;
-      thisForm.querySelector('button').setAttribute('disabled', true);
-      Stripe.card.createToken(thisForm, stripeResponseHandler);
-      return false;
-    });
-  }();
-</script>
 <script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.min.js"></script>
 <script>
-  var elem = document.querySelector('.carousel-1st');
-  var flkty = new Flickity( elem, {
-  // options
-  autoPlay: true,
-  wrapAround: true,
-  cellAlign: 'center',
-  prevNextButtons: false,
-  pageDots: false
-  });
-
-  // element argument can be a selector string
-  //   for an individual element
-  var flkty = new Flickity( '.carousel-2nd', {
+  var flkty = new Flickity( '.carousel', {
   wrapAround: true,
   autoPlay: true,
   cellAlign: 'center',
